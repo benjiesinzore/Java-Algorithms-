@@ -5,7 +5,7 @@ import java.util.*;
 public class DataStructures {
 
     public static void main(String[] args) {
-        new DataStructures().arrays();
+        new DataStructures().treeSet();
     }
 
 
@@ -62,7 +62,8 @@ public class DataStructures {
 
         ageMap.put("Alice", 30);
         ageMap.put("Bob", 25);
-        ageMap.put("Charlie", 35);
+        ageMap.put("Charlie", 25);
+        ageMap.put("BS", 35);
 
         for (String name : ageMap.keySet()) {
             System.out.println(name + ": " + ageMap.get(name));
@@ -97,8 +98,10 @@ public class DataStructures {
         stack.push(2);
         stack.push(3);
 
+        int num = 1;
         while (!stack.isEmpty()) {
-            System.out.println(stack.pop());
+            System.out.println(num + " : " + stack.pop());
+            num++;
         }
     }
 
@@ -123,11 +126,10 @@ public class DataStructures {
      * PriorityQueue is a queue where elements are ordered based on their natural ordering or by a specified comparator.
      * */
     public void priorityQueue() {
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        PriorityQueue<String> pq = new PriorityQueue<>();
 
-        pq.add(5);
-        pq.add(1);
-        pq.add(3);
+        pq.add("Benjamin");
+        pq.add("Sinzore");
 
         while (!pq.isEmpty()) {
             System.out.println(pq.poll());
