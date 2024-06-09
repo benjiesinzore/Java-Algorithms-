@@ -1,7 +1,5 @@
 package org.example.control_and_data_struc;
 
-import java.util.*;
-
 public class ControlStructures {
 
     public static void main(String[] args) {
@@ -151,11 +149,11 @@ public class ControlStructures {
      * */
     public void break_() {
 
-        for (int i = 0; i < 10; i++) {
-            if (i == 5) {
-                break; // exits the loop when i is 5
+        for (int j = 0; j < 10; j++) {
+            if (j == 5) {
+                break; // exits the loop when j is 5
             }
-            System.out.println("i: " + i);
+            System.out.println("j: " + j);
         }
 
     }
